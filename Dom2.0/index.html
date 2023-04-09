@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Somandoo numeros</title>
+</head>
+<body>
+    <h1>Somando valores</h1>
+   <input type="number" name="texto1" id="texto1"> +
+   <input type="number" name="texto2" id="texto2">
+   <input type="button" value="somar" class="resultadofinal1">
+
+   <div class="resultado">
+    resultado
+   </div>
+
+
+
+
+
+<script>
+
+var soma =document.getElementsByClassName("resultadofinal1")[0];
+soma.addEventListener("click",resultadofinal);
+
+function resultadofinal(){
+    var valor1=document.getElementById("texto1");
+    var valor2=document.getElementById("texto2");
+    var res=document.getElementsByClassName("resultado")[0];
+    var n1=Number(valor1.value);
+    var n2=Number(valor2.value);
+    var resultadofiinal=n1+n2;
+    res.innerHTML=(`O resultado da sua soma é ${resultadofiinal}`);
+    res.style.color="red";
+}
+
+</script>
+</body>
+</html>
+
+
+
+
