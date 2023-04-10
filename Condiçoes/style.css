@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body{
+    background-image: url(https://wallpapercave.com/wp/wp5637039.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+
+ 
+    }
+
+.midbox{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 30%;
+    left: 15%;
+
+}
+
+.midbox h1{
+    color: rgb(170, 43, 43);
+    text-align: center;
+}
+
+.velocidade{
+    margin-top: 10px;
+    color: blueviolet;
+    text-align: center;
+}
+.mensagens{
+    background-color: blue;
+    color: chartreuse;
+    width: 200px;
+    height: 37px;
+    margin-top: 20px;
+    border-radius: 10px;
+}

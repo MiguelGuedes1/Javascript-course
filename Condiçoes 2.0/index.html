@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Qual o seu pais</title>
+</head>
+<body>
+    
+<div class="midbox">
+    <h3 class="insira">Insira o seu pais</h3>
+    <input type="text" name="pais" class="pais">
+    <button class="Enter">Enter</button>
+
+    <div class="resposta">
+        <button class="mensagem"></button>
+    </div>
+
+</div>
+
+<div class="bottomcontainer">
+            <h4>Bottom container</h4>
+
+
+</div>
+
+<div class="rodape">
+
+    <h4>rodape</h4>
+</div>
+
+
+
+<script>
+var pais=document.getElementsByClassName("Enter")[0];
+pais.addEventListener("click",nacionalidade);
+
+function nacionalidade(){
+
+var paisinserido=document.getElementsByClassName("pais")[0].value;
+var resultado=document.getElementsByClassName("mensagem")[0];
+
+if(paisinserido==="portugal"){
+    resultado.innerHTML=`Voce é portugues`;
+
+}
+
+else{
+    resultado.innerHTML=`Voce é estrangeiro`;
+}
+}
+
+</script>    
+</body>
+</html>

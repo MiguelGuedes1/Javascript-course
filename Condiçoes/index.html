@@ -4,20 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylestyle.css">
-    <title>Condiçoes</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Sistemas de Multa</title>
 </head>
 <body>
-    <h1>
-        Condiçoes if
-    </h1>
+<div class="midbox">
+    <h1>Sistema de multa</h1>
+    Insira a velocidade em Km que circulava <input type="number" class="velocidade">
+    <button class="verificar">Inserir velocidade</button>
+
+    <div>
+
+    <button class="mensagens"> </button>
+    </div>
+
+</div>
+
+
+
 
 
 
 <script>
+ var obtermulta=document.getElementsByClassName("verificar")[0];
+ obtermulta.addEventListener("click",verificar);
+
+ function verificar(){
+    var velocidade=document.getElementsByClassName("velocidade")[0];
+    var resultado=document.getElementsByClassName("mensagens")[0];
+    var vel =Number(velocidade.value);
+    
+        if(vel>=90){
+            resultado.innerHTML=`Esta em excesso de velocidade`;
+        }
+            
+        else {
+            resultado.innerHTML=`Pode seguir viagem`;
+        }
 
 
 
+    }
 
 
 
