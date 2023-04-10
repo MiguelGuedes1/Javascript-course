@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+ height: 100vh;
+ background: rgb(48, 48, 211);
+ font: normal 10pt Arial;
+ display: flex;
+justify-content: center;
+align-items: center;
+
+
+
+}
+
+.header{
+    position: absolute;
+    top: 10%;
+    text-align: center;    
+
+
+}
+
+
+.section{
+width: 250px;
+background-color:white;
+height: 250px;
+box-shadow:  4px 4px 4px rgba(0, 0, 0, 0.43);
+
+
+    
+}
+
+.msg{
+    text-align: center;
+    color: green;
+    margin-top: 20px;
+}
+
+
+.footer  {
+position: absolute;
+bottom: 10%;
+text-align: center;    
+}
+
+.foto{
+    margin-top: 25px;
+    text-align: center;
+}
