@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(15deg, #F9ED69,#F08A5D,#B83B5E,#6A2C70);
+    background-position: center center;
+    background-repeat:no-repeat;
+    background-size: cover;
+
+
+    
+
+}
+
+section{
+    width: 300px;
+    height: 380px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(15deg, #F9ED69,#F08A5D,#B83B5E,#6A2C70);
+    box-shadow:  4px 4px 4px rgba(0, 0, 0, 0.43);
+    border: solid 1px purple;
+    border-radius: 10px;
+}
+
+.titulo{
+    margin-bottom: 25px;
+
+}
+
+.titulo h1{
+    color:   #bbb250;
+}
+.texto{
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto p{
+    margin-bottom: 5px;
+    color: #6A2C70;
+
+}
+
+.numero{
+    margin-bottom: 5px;
+    border-radius:4px ;
+    text-align: center;
+    width: 30%;
+
+
+}
+
+.texto button{
+    background-color:  #af7cb4;
+    width: 30%;
+    height: 50%;
+    font-size: 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 7px;
+}
+.mensagem{
+    text-align: center;
+    color: #6A2C70;
+    display: flex;
+    flex-direction: column;
+}
+
+footer{
+position: absolute;
+bottom: 5%;
+display: flex;
+flex-direction:row ;
+gap: 10px;
+
+
+
+}
+
+.face{
+    width:25px ;
+    border-radius: 8px;
+}
+
+
+.github{
+    width:25px ;
+    border-radius: 8px;
+}
+
+.face:hover{
+    width: 30px;    
+    
+}
+
+.github:hover{
+    width: 30px;
+}
+
+.logo{
+    position: absolute;
+    left: 2rem;
+    top: 8rem;
+
+}
+
+.logo img{
+    width: 25rem;
+    height: auto;
+}
+
+
+
+
+
