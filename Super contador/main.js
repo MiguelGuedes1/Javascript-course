@@ -15,7 +15,7 @@ function contar(){
         }
         else{
             for(var i=numeroinicio;i<=numerofim;i+=numeropasso){
-            resposta.innerHTML+=`${i}➡️ <br>`
+            resposta.innerHTML+=`${i}➡️ `
             }
         }
 }
