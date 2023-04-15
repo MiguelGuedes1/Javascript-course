@@ -26,7 +26,8 @@ function acrescentarnumero(){
 function verificar(){
 
         mensagem=document.getElementsByClassName("mensagem")[0]
-        var numeromaior= 0
+        mensagem.innerHTML="" // para resetar a mensagem
+        var numeromaior= numeros_guardados[0]
         var media=""
 
         soma=0
@@ -41,7 +42,7 @@ function verificar(){
 
             media=soma/numeros_adicionados
             mensagem.innerHTML=`Os numeros que inseriu foram: ${numeros_guardados} <br> A soma de todos os numeros que inseriu é ${soma} <br> O maior numero que inseriu foi o  ${numeromaior} <br> A media dos numeros que inseriu é: ${media.toFixed(2)}`
-
+            
  }
       
         
